@@ -1,0 +1,13 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+.big {
+    font-size: 100px;
+    line-height: 0%;
+}
+.height {
+    line-height: 20%;
+}
