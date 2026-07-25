@@ -1,36 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-h1 {text-align: center;}
-</style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel ="icon" href="noelhead.jpg" type = "image/x-icon">
-    <link rel="stylesheet" href="css.css">
-    <title>Dad, I'm sorry</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-    <script src="java.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nile Parun</title>
+  <meta name="description" content="Projects, dashboards, scripts, and configs by Nile Parun.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9679;</text></svg>">
+  <link rel="stylesheet" href="css.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y356W58WZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6Y356W58WZ');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y356W58WZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-6Y356W58WZ');
-    </script>    
 <body>
-    <H1 class="big">This page is still in progress</H1>
-    <H1 class="height"> please go back to the <b><a href="https://research.nileparun.com" target="_blank">Research </a></b> or <b><a href="https://stock.nileparun.com" target="_blank">Stock </a></b></H1>
-    <H1 class="height"> and feel free to checkout my new products <b><a href="https://windowfocus.nileparun.com" target="_blank">WindowFocus </a></b> and <b><a href="https://appfocus.nileparun.com" target="_blank"> AppFocus </a></b></H1>
-    <H1 class="height"> as well as my <b><a href="https://github.com/Neilos-Thumm" target="_blank">Github </a></b> 
+
+  <header class="site-header">
+    <h1>Nile Parun</h1>
+    <p class="tagline">Computer Science student &mdash; projects, dashboards, scripts, and configs.</p>
+    <nav class="section-nav">
+      <a href="#projects">Projects</a>
+      <a href="#dashboards">Dashboards</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#configs">Configs</a>
+      <a href="https://github.com/Neilos-Thumm" target="_blank" rel="noopener">GitHub &#8599;</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://focus.nileparun.com/" target="_blank" rel="noopener">Focus Suite</a></h3>
+          <div class="entry-links">
+            <a href="https://focus.nileparun.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/Neilos-Thumm/BraveFill" target="_blank" rel="noopener">BraveFill</a>
+            <a href="https://github.com/Neilos-Thumm/WindowFocus" target="_blank" rel="noopener">WindowFocus</a>
+            <a href="https://github.com/Neilos-Thumm/AppFocus" target="_blank" rel="noopener">AppFocus</a>
+          </div>
+        </div>
+        <p>Three tiny resident macOS hotkey daemons for fast window and app switching &mdash; BraveFill snaps Brave windows onto an external display, WindowFocus jumps to named browser windows by number, and AppFocus focuses or launches apps by hotkey. Each is a single Swift file wrapped in a minimal .app bundle.</p>
+        <ul class="tech">
+          <li>Swift</li><li>Carbon API</li><li>Accessibility API</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://map.nileparun.com/" target="_blank" rel="noopener">GeoMap</a></h3>
+          <div class="entry-links">
+            <a href="https://map.nileparun.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/Neilos-Thumm/GeoMap" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A narrative travel gallery site built on two years of personal location data, pairing trip journal entries with four analytical map views &mdash; walking-route playback, city footprint hulls, a 24-hour SVG rhythm clock, and hotel walking-reach isochrones computed live from routing data.</p>
+        <ul class="tech">
+          <li>Leaflet.js</li><li>OSRM API</li><li>JavaScript</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/Vocapture" target="_blank" rel="noopener">Vocapture</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/Vocapture" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A CLI running on a Raspberry Pi 5 that turns reading physical books into flashcards: type a word, the Pi photographs the page, OCRs the sentence, sends it to Claude for a context-correct definition, and syncs the result to Anki.</p>
+        <ul class="tech">
+          <li>Python</li><li>OpenCV</li><li>Tesseract OCR</li><li>Anthropic API</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/ChronoMap" target="_blank" rel="noopener">ChronoMap</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/ChronoMap" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A zero-install DataviewJS script for Obsidian that plots notes on an interactive Leaflet map and connects them chronologically using coord/date frontmatter, styled to match Obsidian's native graph view.</p>
+        <ul class="tech">
+          <li>JavaScript</li><li>DataviewJS</li><li>Leaflet.js</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/CampusConnect" target="_blank" rel="noopener">CampusConnect</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/CampusConnect" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A mobile app built for a university course that centralizes campus events and timetables, with schedule sharing, clash filtering, and recommendations based on free time, interests, and club memberships.</p>
+        <ul class="tech">
+          <li>React Native</li><li>Expo</li><li>TypeScript</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/BombParty-CLI" target="_blank" rel="noopener">BombParty CLI</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/BombParty-CLI" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A single-player terminal recreation of jklm.fun's BombParty &mdash; type a word containing the given letter chunk before the timer runs out, validated against a ~370k-word English dictionary.</p>
+        <ul class="tech">
+          <li>Python</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="dashboards" aria-labelledby="dashboards-heading">
+      <h2 id="dashboards-heading">Dashboards</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/FinanceDash" target="_blank" rel="noopener">FinanceDash</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/FinanceDash" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>An offline-first personal finance dashboard that imports CSV/XLSX transaction exports and visualizes income, expenses, and category breakdowns entirely client-side &mdash; no server, no cloud, data stored only in browser local storage.</p>
+        <ul class="tech">
+          <li>React</li><li>Tailwind CSS</li><li>Recharts</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://stock.nileparun.com" target="_blank" rel="noopener">Market Dashboard</a></h3>
+          <div class="entry-links">
+            <a href="https://stock.nileparun.com" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/Neilos-Thumm/stock" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A single-page market dashboard aggregating live TradingView widgets &mdash; ticker tapes, a sector heatmap, forex cross rates, and an interactive stock chart &mdash; with no backend of its own.</p>
+        <ul class="tech">
+          <li>TradingView Embed API</li><li>JavaScript</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="scripts" aria-labelledby="scripts-heading">
+      <h2 id="scripts-heading">Scripts</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/BraveFocus-shortcut" target="_blank" rel="noopener">BraveFocus Shortcut</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/BraveFocus-shortcut" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A macOS Shortcuts / AppleScript script that focuses Brave Browser windows by title using Cmd+Shift+1&ndash;9 &mdash; the no-compile predecessor to the Swift-based WindowFocus.</p>
+        <ul class="tech">
+          <li>AppleScript</li><li>macOS Shortcuts</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/vocab-apps-script" target="_blank" rel="noopener">Vocab Apps Script</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/vocab-apps-script" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A Google Apps Script toolkit adding custom Sheets functions for dictionary lookups &mdash; definitions, synonyms, phonetics, and part of speech &mdash; pulled live from the Free Dictionary API. Later evolved into Vocapture.</p>
+        <ul class="tech">
+          <li>Google Apps Script</li><li>JavaScript</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/TaperMonkeyDistractionUtil" target="_blank" rel="noopener">TamperMonkey Distraction Util</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/TaperMonkeyDistractionUtil" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A pair of Tampermonkey userscripts that strip distracting feeds from the browser: redirecting away from Instagram Explore/Reels and continuously removing YouTube Shorts sections.</p>
+        <ul class="tech">
+          <li>JavaScript</li><li>Tampermonkey</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="configs" aria-labelledby="configs-heading">
+      <h2 id="configs-heading">Configs</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/nvim" target="_blank" rel="noopener">nvim</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/nvim" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A LazyVim-based Neovim configuration with custom fuzzy mark/buffer-jump plugins (snacks-mark, snacks-jump) and a hand-tuned Catppuccin Mocha colorscheme blended with Tokyonight accents.</p>
+        <ul class="tech">
+          <li>Lua</li><li>Neovim</li><li>LazyVim</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/tmux" target="_blank" rel="noopener">tmux</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/tmux" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>A tmux configuration with vim-style pane navigation, fzf-powered popups for jumping between windows and sessions by recency, and a minimal custom status bar.</p>
+        <ul class="tech">
+          <li>tmux</li><li>fzf</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a href="https://github.com/Neilos-Thumm/dotfiles" target="_blank" rel="noopener">dotfiles</a></h3>
+          <div class="entry-links">
+            <a href="https://github.com/Neilos-Thumm/dotfiles" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>Zsh and Vim dotfiles: vi-mode keybindings, a git-aware prompt showing command timing and exit status, eza-based ls aliases, and a yazi wrapper that moves the shell to wherever you navigated to.</p>
+        <ul class="tech">
+          <li>Zsh</li><li>Vim</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Parun Thummadetsak &middot; <a href="https://github.com/Neilos-Thumm" target="_blank" rel="noopener">github.com/Neilos-Thumm</a></p>
+  </footer>
+
 </body>
 </html>
-
-
-
