@@ -152,6 +152,7 @@ section h2 {
   margin-right: 0.4em;
   border-radius: 50%;
   background: var(--live);
+  vertical-align: 0.09em;
 }
 
 .entry p {
