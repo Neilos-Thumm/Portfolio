@@ -4,6 +4,7 @@
   --muted: #666666;
   --border: #e2e2e2;
   --accent: #3b5bdb;
+  --live: #db3b3b;
   --chip-bg: #f0f0f2;
   --chip-fg: #444444;
 }
@@ -15,6 +16,7 @@
     --muted: #9a9a9a;
     --border: #2a2d33;
     --accent: #8ab4ff;
+    --live: #ff8a8a;
     --chip-bg: #1f2228;
     --chip-fg: #b7b9bf;
   }
@@ -136,6 +138,20 @@ section h2 {
 
 .entry-links a:hover {
   text-decoration: underline;
+}
+
+.entry-links a.live {
+  color: var(--live);
+}
+
+.entry-links a.live::before {
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background: var(--live);
 }
 
 .entry p {
