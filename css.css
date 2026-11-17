@@ -254,3 +254,79 @@ section h2 {
     align-items: flex-start;
   }
 }
+
+.scroll-rail {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .scroll-rail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    position: fixed;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(-50%);
+    z-index: 20;
+    padding-left: 0.25rem;
+    border-left: 1px solid var(--border);
+  }
+
+  .rail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    padding: 0.1rem 0;
+  }
+
+  .rail-label {
+    font-size: 0.72rem;
+    color: var(--muted);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  }
+
+  .rail-tick {
+    display: block;
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--muted);
+    opacity: 0.5;
+    transition: width 0.25s ease, background-color 0.25s ease, opacity 0.25s ease;
+  }
+
+  .rail-item--sub .rail-tick {
+    width: 10px;
+  }
+
+  .rail-item:hover .rail-label,
+  .rail-item.active .rail-label {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .rail-item.active .rail-label {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .rail-item:hover .rail-tick,
+  .rail-item.active .rail-tick {
+    opacity: 1;
+  }
+
+  .rail-item.active .rail-tick {
+    width: 32px;
+    background: var(--accent);
+  }
+
+  .rail-item--sub.active .rail-tick {
+    width: 22px;
+  }
+}

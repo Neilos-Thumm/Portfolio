@@ -41,6 +41,37 @@
     </nav>
   </header>
 
+  <nav class="scroll-rail" aria-label="Page sections">
+    <a class="rail-item" href="#projects" data-target="projects">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Projects</span>
+    </a>
+    <a class="rail-item" href="#dashboards" data-target="dashboards">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Dashboards</span>
+    </a>
+    <a class="rail-item" href="#scripts" data-target="scripts">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Scripts</span>
+    </a>
+    <a class="rail-item rail-item--sub" href="#scripts-window-nav" data-target="scripts-window-nav">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Window Navigation</span>
+    </a>
+    <a class="rail-item rail-item--sub" href="#scripts-obsidian" data-target="scripts-obsidian">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Obsidian</span>
+    </a>
+    <a class="rail-item rail-item--sub" href="#scripts-claude-tooling" data-target="scripts-claude-tooling">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Claude Code Tooling</span>
+    </a>
+    <a class="rail-item" href="#configs" data-target="configs">
+      <span class="rail-tick"></span>
+      <span class="rail-label">Configs</span>
+    </a>
+  </nav>
+
   <main>
 
     <section id="projects" aria-labelledby="projects-heading">
@@ -293,7 +324,7 @@
         </ul>
       </article>
 
-      <h3 class="subsection-heading">Window Navigation</h3>
+      <h3 id="scripts-window-nav" class="subsection-heading">Window Navigation</h3>
 
       <article class="entry">
         <div class="entry-head">
@@ -360,7 +391,7 @@
         </ul>
       </article>
 
-      <h3 class="subsection-heading">Obsidian</h3>
+      <h3 id="scripts-obsidian" class="subsection-heading">Obsidian</h3>
 
       <article class="entry">
         <div class="entry-head">
@@ -414,7 +445,7 @@
         </ul>
       </article>
 
-      <h3 class="subsection-heading">Claude Code Tooling</h3>
+      <h3 id="scripts-claude-tooling" class="subsection-heading">Claude Code Tooling</h3>
 
       <article class="entry">
         <div class="entry-head">
@@ -518,5 +549,6 @@
     <p>&copy; 2026 Parun Thummadetsak &middot; <a href="https://github.com/Neilos-Thumm" target="_blank" rel="noopener">github.com/Neilos-Thumm</a></p>
   </footer>
 
+  <script src="rail.js" defer></script>
 </body>
 </html>
